@@ -274,8 +274,8 @@ const TrendPage: React.FC<Props> = ({ tables }) => {
                   }
                 />
                 <Tooltip
-                  formatter={(value: number, name: string) => [
-                    value.toLocaleString(),
+                  formatter={(value: any, name: any) => [
+                    typeof value === "number" ? value.toLocaleString() : value,
                     name,
                   ]}
                 />
