@@ -267,7 +267,7 @@ const DataPage: React.FC<Props> = ({ tables, setTables }) => {
         okText="生成关联表"
       >
         <Form form={joinForm} layout="vertical" onFinish={handleJoin}>
-          <Divider orientation="left" plain>
+          <Divider orientation={"left" as any} plain>
             左表
           </Divider>
           <Row gutter={12}>
@@ -290,7 +290,7 @@ const DataPage: React.FC<Props> = ({ tables, setTables }) => {
             </Col>
           </Row>
 
-          <Divider orientation="left" plain>
+          <Divider orientation={"left" as any} plain>
             右表
           </Divider>
           <Row gutter={12}>
